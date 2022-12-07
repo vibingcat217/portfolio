@@ -1,0 +1,61 @@
+.card {
+  margin: 2rem 1rem;
+  max-width: 420px;
+  background-color: var(--card);
+  border-radius: 8px;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.card h3 {
+  color: var(--white);
+}
+
+.card button {
+  position: relative;
+  background-color: var(--white);
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--card);
+  cursor: pointer;
+  line-height: 20px;
+  outline: none;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  touch-action: manipulation;
+}
+
+.text-container {
+  text-align: left;
+  padding: 0 2rem 0.5rem 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
