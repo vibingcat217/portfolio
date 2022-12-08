@@ -57,11 +57,11 @@ function App() {
       </div>
       <div id="personas" className="section">
         <h1>
-          <img
+          {/* <img
             src={require("./assets/foxblob.gif")}
             alt="fox blob gif"
             width="320px"
-          />
+          /> */}
           Personas
         </h1>
         <h2>Context</h2>
@@ -86,11 +86,11 @@ function App() {
       </div>
       <div id="redesign" className="section">
         <h1>
-          <img
+          {/* <img
             src={require("./assets/foxblob.gif")}
             alt="fox blob gif"
             width="320px"
-          />
+          /> */}
           Redesign
         </h1>
         <h2>Context</h2>
@@ -119,11 +119,11 @@ function App() {
       </div>
       <div id="iterative" className="section">
         <h1>
-          <img
+          {/* <img
             src={require("./assets/foxblob.gif")}
             alt="fox blob gif"
             width="320px"
-          />
+          /> */}
           Iterative Design
         </h1>
         <h2>Context</h2>
@@ -156,11 +156,11 @@ function App() {
       </div>
       <div id="development" className="section">
         <h1>
-          <img
+          {/* <img
             src={require("./assets/foxblob.gif")}
             alt="fox blob gif"
             width="320px"
-          />
+          /> */}
           Development
         </h1>
         <h2>Context</h2>
