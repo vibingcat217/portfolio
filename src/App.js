@@ -8,7 +8,7 @@ function App() {
         <div className="heading">
           <div className="title">
             <h1>vibingcat217</h1>
-            <h2>Welcome</h2>
+            <h2>Portfolio</h2>
           </div>
         </div>
       </div>
@@ -56,12 +56,14 @@ function App() {
         </div>
       </div>
       <div id="personas" className="section">
-        <img
-          src={require("./assets/foxblob.gif")}
-          alt="fox blob gif"
-          width="320px"
-        />
-        <h1>Personas</h1>
+        <h1>
+          <img
+            src={require("./assets/foxblob.gif")}
+            alt="fox blob gif"
+            width="320px"
+          />
+          Personas
+        </h1>
         <h2>Context</h2>
         <p>
           The goal of this project was to observe and interview users
@@ -83,12 +85,14 @@ function App() {
         </a>
       </div>
       <div id="redesign" className="section">
-        <img
-          src={require("./assets/foxblob.gif")}
-          alt="fox blob gif"
-          width="320px"
-        />
-        <h1>Redesign</h1>
+        <h1>
+          <img
+            src={require("./assets/foxblob.gif")}
+            alt="fox blob gif"
+            width="320px"
+          />
+          Redesign
+        </h1>
         <h2>Context</h2>
         <p>
           I was tasked with redesigning a website, so I chose Johnny Burrito, a
@@ -114,12 +118,14 @@ function App() {
         </a>
       </div>
       <div id="iterative" className="section">
-        <img
-          src={require("./assets/foxblob.gif")}
-          alt="fox blob gif"
-          width="320px"
-        />
-        <h1>Iterative Design</h1>
+        <h1>
+          <img
+            src={require("./assets/foxblob.gif")}
+            alt="fox blob gif"
+            width="320px"
+          />
+          Iterative Design
+        </h1>
         <h2>Context</h2>
         <p>
           I worked in a group to design an interactive interface for Discz, a
@@ -149,12 +155,14 @@ function App() {
         </a>
       </div>
       <div id="development" className="section">
-        <img
-          src={require("./assets/foxblob.gif")}
-          alt="fox blob gif"
-          width="320px"
-        />
-        <h1>Development</h1>
+        <h1>
+          <img
+            src={require("./assets/foxblob.gif")}
+            alt="fox blob gif"
+            width="320px"
+          />
+          Development
+        </h1>
         <h2>Context</h2>
         <p>
           This interface allow Rainbow Six Siege players to calculate how much
