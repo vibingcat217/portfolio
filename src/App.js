@@ -8,7 +8,11 @@ function App() {
         <div className="heading">
           <div className="title">
             <h1>vibingcat217</h1>
-            <h2>Portfolio</h2>
+            <h2>UI/UX Portfolio</h2>
+            <p>
+              This is a record of my progress in CS1300. I'm new to UI/UX and
+              enjoy drawing and animation.
+            </p>
           </div>
         </div>
       </div>
@@ -20,7 +24,7 @@ function App() {
         />
         <h1>My Work</h1>
         <h3>
-          Click on the images to view or click on the button to read more!
+          Hover over the cards to read more or click to visit each website :)
         </h3>
         <div className="row">
           <Card
@@ -28,14 +32,54 @@ function App() {
             img={require("./assets/personas-screenshot.png")}
             caption="Investigating the CVS Self Checkout Machine user interface"
             link="https://vibingcat217.github.io/personas-and-storyboarding/"
-            more="#personas"
+            desc={
+              <div>
+                <h3>Context</h3>
+                <p>
+                  The goal of this project was to observe and interview users
+                  interacting with an interface and use the data collected to
+                  create a persona. I chose the CVS Self-Checkout Machine as my
+                  interface and recorded my observations. I then interviewed
+                  three users and summarized their responses. Finally, I created
+                  two Personas and a Storyboard based on my findings.
+                </p>
+                <h3>Design</h3>
+                <p>
+                  My website uses a menu bar on the right hand side to navigate
+                  the different sections of the page. For devices with a smaller
+                  screen size, this turns into a dropdown menu. Additionally, I
+                  made the margins shrink with window size to keep the text more
+                  readable.
+                </p>
+              </div>
+            }
           />
           <Card
             title="Responsive Redesign"
             img={require("./assets/redesign-screenshot.png")}
             caption="Redesigning the Johnny Burrito website utilizing low-fi and hi-fi prototypes"
             link="https://vibingcat217.github.io/responsive-redesign/"
-            more="#redesign"
+            desc={
+              <div>
+                <h3>Context</h3>
+                <p>
+                  I was tasked with redesigning a website, so I chose Johnny
+                  Burrito, a local restaurant in Charlotte. During my internship
+                  last summer, I frequently ordered lunch from this
+                  establishment. I sought to redesign it in hopes of making it
+                  representative of their service.
+                </p>
+                <h3>Design</h3>
+                <p>The design is very human.</p>
+                <p>
+                  I eliminated many of the usability and accessibility issues by
+                  adding alt text to images and aligning the content into two
+                  columns. I also expunged some of the unnecessary tabs and
+                  redundant links. Additionally, I created a style guide to keep
+                  my design consistent.
+                </p>
+              </div>
+            }
           />
         </div>
         <div className="row">
@@ -44,26 +88,61 @@ function App() {
             img={require("./assets/iterativedesign-screenshot.png")}
             caption="Designing an interactive interface for Discz, an emerging startup from Y Combinator"
             link="https://jumpylemur431.github.io/iterative-design/"
-            more="#iterative"
+            desc={
+              <div>
+                <h3>Context</h3>
+                <p>
+                  I worked in a group to design an interactive interface for
+                  Discz, a music discovery social media platform. We used low-fi
+                  sketches to visualize our ideas and eventually created a
+                  high-fi mock-up in Figma. We also received critiques on our
+                  design and assembled a list of potential changes based on the
+                  feedback.
+                </p>
+                <h3>Design</h3>
+                <p>
+                  We designed the app keeping in mind the original goal of the
+                  startup, which was to find new music with the swipe of a
+                  finger and share it with others. We took inspriation from
+                  Tinder to build the swiping design and used a similar design
+                  to other music apps.
+                </p>
+              </div>
+            }
           />
           <Card
             title="Development"
             img={require("./assets/development-screenshot.png")}
             caption="Creating an application to allow Rainbow Six Siege players to plan their spending"
             link="https://vibingcat217.github.io/development/"
-            more="#development"
+            desc={
+              <div>
+                <h3>Context</h3>
+                <p>
+                  This interface allow Rainbow Six Siege players to calculate
+                  how much Renown (in-game currency) they need to purchase their
+                  desired operators. Players can optimize their Renown spending
+                  by carefully choosing which combination of characters they
+                  would like to purchase and working towards the total cost.
+                </p>
+                <h3>Design</h3>
+                <p>
+                  The design mirrors a "shopping" system. On the left hand side,
+                  there is a sidebar containing filtering and sorting options as
+                  well as a list of characters that have been added and their
+                  total cost. You can sort by organization, ascending price, or
+                  descending price.
+                </p>
+              </div>
+            }
           />
         </div>
+        <div className="section">
+          <p>Thanks for visiting!</p>
+        </div>
       </div>
-      <div id="personas" className="section">
-        <h1>
-          {/* <img
-            src={require("./assets/foxblob.gif")}
-            alt="fox blob gif"
-            width="320px"
-          /> */}
-          Personas
-        </h1>
+      {/* <div id="personas" className="section">
+        <h1>Personas</h1>
         <h2>Context</h2>
         <p>
           The goal of this project was to observe and interview users
@@ -85,14 +164,7 @@ function App() {
         </a>
       </div>
       <div id="redesign" className="section">
-        <h1>
-          {/* <img
-            src={require("./assets/foxblob.gif")}
-            alt="fox blob gif"
-            width="320px"
-          /> */}
-          Redesign
-        </h1>
+        <h1>Redesign</h1>
         <h2>Context</h2>
         <p>
           I was tasked with redesigning a website, so I chose Johnny Burrito, a
@@ -118,14 +190,7 @@ function App() {
         </a>
       </div>
       <div id="iterative" className="section">
-        <h1>
-          {/* <img
-            src={require("./assets/foxblob.gif")}
-            alt="fox blob gif"
-            width="320px"
-          /> */}
-          Iterative Design
-        </h1>
+        <h1>Iterative Design</h1>
         <h2>Context</h2>
         <p>
           I worked in a group to design an interactive interface for Discz, a
@@ -155,14 +220,7 @@ function App() {
         </a>
       </div>
       <div id="development" className="section">
-        <h1>
-          {/* <img
-            src={require("./assets/foxblob.gif")}
-            alt="fox blob gif"
-            width="320px"
-          /> */}
-          Development
-        </h1>
+        <h1>Development</h1>
         <h2>Context</h2>
         <p>
           This interface allow Rainbow Six Siege players to calculate how much
@@ -184,7 +242,7 @@ function App() {
         <a href="https://vibingcat217.github.io/development/">
           <button>View Website</button>
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }

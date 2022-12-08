@@ -1,6 +1,8 @@
 :root {
   --background: #f5f5fd;
   --card: #ca634e;
+  --card-variant: #f7694c;
+  --title: #651614;
   --white: #fffdfd;
 }
 
@@ -9,14 +11,64 @@
 }
 
 .heading {
-  padding: 8rem 4rem;
+  padding: 6rem 4rem;
   max-width: 1200px;
   margin: auto;
 }
 
 .title {
+  position: absolute;
+  color: var(--card-variant);
   text-align: right;
-  margin-top: 8rem;
+  background-image: url(assets/cloud.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* text-shadow: rgb(255, 255, 255) 0px 0px 10px, rgb(142, 236, 255) 0px 0px 20px; */
+}
+
+.title h1,
+.title h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .title {
+    padding: 8vw 14vw;
+    right: 1vw;
+    width: 32vw;
+  }
+  .title h1 {
+    font-size: 3vw;
+  }
+
+  .title h2 {
+    font-size: 2.5vw;
+  }
+
+  .title p {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .title {
+    padding: 7rem 6rem;
+    right: 2rem;
+    width: 300px;
+  }
+  .title h1 {
+    font-size: 42px;
+  }
+
+  .title h2 {
+    font-size: 32px;
+  }
+
+  .title p {
+    font-size: 18px;
+  }
 }
 
 .display {
@@ -25,12 +77,11 @@
   padding-bottom: 80px;
   max-width: 1080px;
   margin: auto;
-  color: var(--card);
+  color: var(--card-variant);
 }
 
 .section {
-  margin: 2rem 24vw 8rem 24vw;
-  color: var(--card);
+  margin: 12rem 24vw 2rem 24vw;
 }
 
 .row {
@@ -38,13 +89,14 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  overflow: visible;
 }
 
 /* Parallax scrolling */
 .parallax {
   background-image: url(assets/parallax.gif);
   width: 100%;
-  height: 790px;
+  height: 760px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -56,22 +108,10 @@ body {
   color: var(--white);
 }
 
-h1 {
-  font-size: 48px;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
 p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
-  text-align: left;
+  /* text-align: left; */
 }
 
 button {

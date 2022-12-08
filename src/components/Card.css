@@ -3,6 +3,10 @@
   max-width: 420px;
   background-color: var(--card);
   border-radius: 8px;
+  position: relative;
+  height: 46vh;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
 }
 
 .card img {
@@ -14,7 +18,13 @@
   color: var(--white);
 }
 
-.card button {
+.card:hover {
+  /* overflow: visible; */
+  border-radius: 8px;
+  height: 68vh;
+}
+
+/* .card button {
   position: relative;
   background-color: var(--white);
   border-radius: 4px;
@@ -32,11 +42,25 @@
   text-decoration: none;
   transition: color 100ms;
   touch-action: manipulation;
-}
+} */
 
 .text-container {
   text-align: left;
-  padding: 0 2rem 0.5rem 2rem;
+  padding: 0 2rem;
+  transition: all 0.5s ease-in-out;
+  background-color: var(--card);
+  border-radius: 0 0 8px 8px;
+  height: 100%;
+  position: absolute;
+  top: 229px;
+}
+
+.card:hover .text-container {
+  position: absolute;
+  top: 0;
+  left: 0rem;
+  z-index: 100;
+  border-radius: 8px;
 }
 
 a {
