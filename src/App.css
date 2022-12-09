@@ -11,7 +11,7 @@
 }
 
 .heading {
-  padding: 6rem 4rem;
+  padding: 5rem 4rem;
   max-width: 1200px;
   margin: auto;
 }
@@ -35,20 +35,20 @@
 
 @media only screen and (max-width: 800px) {
   .title {
-    padding: 8vw 14vw;
+    padding: 14vw 10vw;
     right: 1vw;
-    width: 32vw;
+    width: calc(32vw);
   }
   .title h1 {
-    font-size: 3vw;
+    font-size: calc(10px + 2.5vw);
   }
 
   .title h2 {
-    font-size: 2.5vw;
+    font-size: calc(8px + 2vw);
   }
 
   .title p {
-    font-size: 2vw;
+    font-size: calc(4px + 1.5vw);
   }
 }
 
