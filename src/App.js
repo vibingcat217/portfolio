@@ -25,7 +25,7 @@ function App() {
         </h3>
         <div className="row">
           <Card
-            title="Personas and Storyboarding"
+            title="Personas / Storyboarding"
             img={require("./assets/personas-screenshot.png")}
             caption="Investigating the CVS Self Checkout Machine user interface"
             link="https://vibingcat217.github.io/personas-and-storyboarding/"
